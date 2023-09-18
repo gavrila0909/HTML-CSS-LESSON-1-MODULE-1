@@ -4,7 +4,27 @@
         --link-hover-color: #FF6C00;
 }
 
-.global-header {background-color:#333333;}
+.global-header {background-color:#333333; display: flex;}
+
+.global-header .main-navigation ul{list-style-type: none;
+display: flex;
+width: 450px;
+justify-content:space-between ;
+flex-direction: row;
+}
+
+.nav-container{ display: flex;
+     align-items: center; 
+     justify-content: space-between;  
+}
+
+.contact-container{ 
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        align-items: center;
+}
+
 .global-header .main-navigation a:link,
 .global-header .main-navigation a:visited { 
         text-decoration: none;
