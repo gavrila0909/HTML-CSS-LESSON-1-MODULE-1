@@ -11,20 +11,20 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
      />
-     
+     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="global-header">
-        <!-- TODO: PUNE LINK PE LOGO-->
+        <a href="./index.html">
         <img src="images/logo.svg" alt="Logo BarberShop">
-
+        </a>
      <div class="nav-container">
          <nav class="main-navigation">
              <ul>
-                <li> <a href="">Barbers</a></li>
-                <li> <a href="">Contacts</a> </li>
-                <li> <a href="">Services and Prices</a> </li>
+                <li> <a href="#">Barbers</a></li>
+                <li> <a href="#">Contacts</a> </li>
+                <li> <a href="#">Services and Prices</a> </li>
                 <li> <a href="about.html">About</a> </li>
              </ul>
          </nav>
@@ -33,15 +33,14 @@
            <a href="tel:+38 044 111 11 11" class="phone-number">+38 044 111 11 11</a>
            <button type="button" class="button">Book a service</button> 
          </div>
-
      </div>
        
         
 
         <section>
             <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-            <a href="#" target="_blank">Instagram</a>
-            <img src="images/Rectangle 4.png" alt="Rectangle">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <img src="images/Rectangle 4.png" alt="vertical Dash">
         </section>
     </header>
 
@@ -74,47 +73,65 @@
 
             <!--Services an prices Section-->
 
-            <section>
-
+            <section id="service" class="section prices-section">
+              <div class="section-description">
+                <div class="heading-with-dash">
                 <img src="images/Rectangle 5.png" alt="Horizontal Dash">
                 <h3>Spend time in the company of the best craftsmen</h3>
-                <h2>Services and Prices</h2>
-
-                <ul>
+              </div>
+                <h2 class="section-heading">Services and Prices</h2>
+              </div>
+            
+              <div class="prices"> 
+                <ul class="prices-list">
                     <li>
                         <span>Men's Haircut</span>
+                        <span class="prices-dash"></span>
                         <span>from 300 UAH </span>
                     </li>
                     <li>
                         <span>Beard Trim</span>
+                        <span class="prices-dash"></span>
                         <span>from 200 UAH</span>
                     </li>
                     <li>
                         <span>Mustache Trim</span>
+                        <span class="prices-dash"></span>
                         <span>from 200 UAH</span>
                     </li>
                     <li>
                         <span>Straight Razor Shave</span>
+                        <span class="prices-dash"></span>
                         <span>from 200 UAH</span>
                     </li>
+                   </ul>
+                   <ul class="prices-list"> 
                     <li>
                         <span>Trainee Haircut </span>
+                        <span class="prices-dash"></span>
                         <span>from 50 UAH </span>
                     </li>
                     <li>
                         <span>Buzz Cut</span>
+                        <span class="prices-dash"></span>
                         <span>from 200 UAH </span>
                     </li>
                     <li>
                         <span>Kids Haircut (&lt;12 y.o.)</span>
+                        <span class="prices-dash"></span>
                         <span>from 300 UAH </span>
                     </li>
                     <li>
                         <span>Gray Coverage</span>
+                        <span class="prices-dash"></span>
                         <span>from 200 UAH </span>
                     </li>
                 </ul>
-                <button>Book a service</button>
+            </div>
+               
+            <div class="centered-container">
+                <button class="button">Book a Service</button>
+              </div>
               </section>
 
                 <!--Old School section-->

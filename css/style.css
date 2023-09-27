@@ -4,23 +4,28 @@
         --link-hover-color: #FF6C00;
 }
 
-.global-header {background-color:#333333; display: flex;}
+.global-header {
+        background-color:#333333; 
+        display: flex;}
 
-.global-header .main-navigation ul{list-style-type: none;
+.global-header .main-navigation ul { 
+list-style-type: none;
 display: flex;
-width: 450px;
-justify-content:space-between ;
-flex-direction: row;
+width: 405px;
+justify-content:space-between;
+
 }
 
-.nav-container{ display: flex;
+.nav-container{ 
+    display: flex;
      align-items: center; 
-     justify-content: space-between;  
+     justify-content: space-between; 
+     width:80% ; 
 }
 
 .contact-container{ 
         display: flex;
-        width: 40%;
+        width: 30%;
         justify-content: space-between;
         align-items: center;
 }
@@ -36,24 +41,40 @@ flex-direction: row;
         letter-spacing: 0.1em;
 }
 
-.global-header .main-navigation a:hover {color: #FF6C00;}
-.global-header .main-navigation a:active {color: red;}
+.global-header .main-navigation a:hover {color: var(--link-hover-color)}
+.global-header .main-navigation a:active {color:#ff0000}
 
-h1, h2, h3, h4 { font-family: var(--heading-font-family); font-weight: 700; }
+h1, h2, h3, h4 { 
+        font-family: var(--heading-font-family); 
+        font-weight: 700; 
+}
+.button{
+        cursor: pointer;
+}
 
-.phone-number{font-family: var(--text-font-family);
+.centred-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-number{
+        font-family: var(--text-font-family);
         color: var(--link-color);
         text-decoration: none;
         font-size: 12px;
         font-weight: 600;
         line-height: 16px;
         letter-spacing: 0.1em;
-        text-align: left;
+        
 }
-.phone-number:hover{color:var(--link-hover-color) ;}
+.phone-number:hover{
+        color:var(--link-hover-color) ;
+}
 
 .button{
 color: var(--link-color);
+font-family: var(--text-font-family);
 font-size: 12px;
 font-weight: 600;
 line-height: 16px;
@@ -70,4 +91,82 @@ padding: 12px 25px
 .button:hover{
         background-color:var(--link-color) ;
         color: var(--link-hover-color);
+        border: 1px solid #fff;
 }
+.section {
+        padding: 130px 55px;
+      }
+
+.prices-section {
+        background-image: url("../images/servicies-section-bg-image.png");
+        background-color: #111319;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+.heading-with-dash {
+        display: flex;
+        align-items: center;
+        color: rgba(157, 164, 189, 0.6);
+        margin-bottom: 20px;
+}
+.heading-with-dash h3 {
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: var(--text-font-family);
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+}
+.section-heading {
+        font-family: var(--heading-font-family);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        color: #fff;
+}
+.prices {
+       display: flex;
+        margin: 50px 0;
+}
+.prices-list {
+        padding: 30px 40px;
+        font-family: var(--text-font-family);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: rgba(157, 164, 189, 1);
+        list-style: none;
+        flex-grow: 1;
+        background-image: linear-gradient(rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+}
+.prices-list:hover {
+        background-image: linear-gradient(rgba(9, 11, 19, 1), rgba(9, 11, 19, 0.2));
+        cursor: pointer;
+}
+.prices-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+}
+.prices-list li:not(:last-child) {
+        margin-bottom: 20px;
+}
+.prices-list li .prices-dash {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+        height: 1px;
+        background: rgba(157, 164, 189, 0.12);
+}
+.prices-list li .prices-dash {
+        margin-left: 6px;
+        margin-right: 6px;
+}
+
+      
+
+
+.
